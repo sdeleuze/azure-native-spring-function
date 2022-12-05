@@ -11,7 +11,7 @@ public class DemoApplication {
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(DemoApplication.class);
-        String functionServerPort = System.getenv("FUNCTIONS_HTTPWORKER_PORT");
+        String functionServerPort = System.getenv("FUNCTIONS_CUSTOMHANDLER_PORT");
         if (functionServerPort != null) {
             app.setDefaultProperties(Collections
                     .singletonMap("server.port", functionServerPort));

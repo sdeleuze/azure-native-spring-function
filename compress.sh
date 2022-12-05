@@ -10,12 +10,12 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-echo "Install UPX"
-wget https://github.com/upx/upx/releases/download/v$UPX_VERSION/upx-$UPX_VERSION-amd64_linux.tar.xz
-tar -xvf upx-$UPX_VERSION-amd64_linux.tar.xz
+#echo "Install UPX"
+#wget https://github.com/upx/upx/releases/download/v$UPX_VERSION/upx-$UPX_VERSION-amd64_linux.tar.xz
+#tar -xvf upx-$UPX_VERSION-amd64_linux.tar.xz
 
-echo "Compressing $ARTIFACT with UPX"
-./upx-$UPX_VERSION-amd64_linux/upx --best target/function/spring-native-image
+#echo "Compressing $ARTIFACT with UPX"
+#./upx-$UPX_VERSION-amd64_linux/upx --best target/function/spring-native-image
 
 echo "Compressing the folder with ZIP"
 cd target/function
